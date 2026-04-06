@@ -13,7 +13,7 @@ pd.set_option('display.width', None) # 横幅の自動折り返しを防ぐ
 
 
 # 1. データの読み込み
-@st.cache_data # これを入れると読み込みが爆速になります
+@st.cache_data(ttl=3600) # これを入れると読み込みが爆速になります
 def load_data():
     return pd.read_csv("data.csv", encoding='shift-jis')
 
