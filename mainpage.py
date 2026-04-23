@@ -1,8 +1,8 @@
 import streamlit as st
 
 st.title("メイン画面")
-st.write("下のボタンを押すとサブ画面へ移動します。")
-
+st.write("分野を選択して下さい。")
+シリタ
 # ボタンが押されたら、pagesフォルダ内のファイルへ遷移
 # if st.button("自動車株"):
 #     st.switch_page("pages/jidousha.py")
