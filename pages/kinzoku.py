@@ -3,11 +3,12 @@ import pandas as pd
 import yfinance as yf
 from japaname import get_data
 
+#st.set_page_config(page_title="金属株", menu_items=None)
 st.title("金属株")
 
 # 調べたい銘柄リスト
 
-codes = ["1540.T", "1541.T","1542.T","1543.T","1672.T"]
+codes = ["1540.T", "1541.T","1542.T","1543.T","1672.T","1692.T","1693.T"]
 
 with st.spinner('データを取得中...'):
 
