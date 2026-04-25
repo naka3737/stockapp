@@ -3,8 +3,8 @@ import pandas as pd
 import yfinance as yf
 from japaname import get_data
 
-#st.set_page_config(page_title="金属株", menu_items=None)
-st.title("金属株")
+st.set_page_config(page_title="金属", menu_items=None)
+st.title("金属")
 
 # 調べたい銘柄リスト
 
