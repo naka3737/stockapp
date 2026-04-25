@@ -12,6 +12,9 @@ st.write("分野を選択して下さい。")
 if st.button("自動車"):
     st.switch_page("pages/jidousha.py")
 
+if st.button("銀行"):
+    st.switch_page("pages/ginkou.py")
+
 if st.button("半導体"):
     st.switch_page("pages/handoutai.py")
 
