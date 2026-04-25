@@ -9,7 +9,7 @@ st.write("分野を選択して下さい。")
 #     st.switch_page("pages/jidousha.py")
 
 
-if st.button("自働車"):
+if st.button("自動車"):
     st.switch_page("pages/jidousha.py")
 
 if st.button("半導体"):
