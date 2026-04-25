@@ -1,5 +1,6 @@
 import streamlit as st
 
+st.set_page_config(page_title="メイン画面", menu_items=None)
 st.title("メイン画面")
 st.write("分野を選択して下さい。")
 
@@ -11,8 +12,12 @@ st.write("分野を選択して下さい。")
 if st.button("自働車"):
     st.switch_page("pages/jidousha.py")
 
+if st.button("半導体"):
+    st.switch_page("pages/handoutai.py")
+
 if st.button("金属"):
     st.switch_page("pages/kinzoku.py")
 
 if st.button("資源"):
     st.switch_page("pages/shigen.py")
+
