@@ -42,3 +42,6 @@ def main():
     st.dataframe(df['Close'].tail())
 
 main()
+
+if st.button("戻る"):
+    st.switch_page("mainpage.py")

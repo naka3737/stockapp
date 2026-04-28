@@ -38,5 +38,5 @@ with st.spinner('データを取得中...'):
 st.subheader("詳細データ")
 st.dataframe(df['Close'].tail())
 
-if st.button("資源"):
+if st.button("戻る"):
     st.switch_page("mainpage.py")

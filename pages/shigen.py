@@ -4,8 +4,8 @@ import yfinance as yf
 from japaname import get_data
 
 
-st.set_page_config(page_title="資源株", menu_items=None)
-st.title("資源株")
+st.set_page_config(page_title="資源", menu_items=None)
+st.title("資源")
 
 # 調べたい銘柄リスト
 
@@ -57,3 +57,6 @@ with st.spinner('データを取得中...'):
 # 下に詳細な表も表示してみる
 st.subheader("詳細データ")
 st.dataframe(df['Close'].tail())
+
+if st.button("戻る"):
+    st.switch_page("mainpage.py")
