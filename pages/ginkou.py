@@ -37,3 +37,6 @@ with st.spinner('データを取得中...'):
 # 下に詳細な表も表示してみる
 st.subheader("詳細データ")
 st.dataframe(df['Close'].tail())
+
+if st.button("資源"):
+    st.switch_page("mainpage.py")
