@@ -45,7 +45,17 @@ if not result.empty:
         #price = ticker.fast_info.last_price
 
         # 投資判断（推奨）を表示
-        handan = ticker.recommendations
+        #handan = ticker.recommendations
+
+        try:
+            handan = ticker.recommendations
+            
+            if handan is not None and not handan.empty:
+                st.write(handan)
+            else:
+                st.write("現在、推奨データは利用できません。")
+        except Exception:
+            st.write("推奨データの取得中にエラーが発生しました。")
 
         # 目標株価を表示
         handan2 = ticker.info.get("targetMeanPrice")
