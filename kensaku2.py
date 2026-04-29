@@ -49,7 +49,7 @@ if not result.empty:
 
         try:
             handan = ticker.recommendations
-            
+
             if handan is not None and not handan.empty:
                 st.write(handan)
             else:
@@ -72,6 +72,10 @@ if not result.empty:
             st.metric(label="1株配当（年間）", value=f"{dividend_rate} 円")
         else:
             st.metric(label="配当利回り", value="データなし")
+
+        profile_url = f"https://finance.yahoo.co.jp/quote/{selected_code}.T/profile"
+
+        st.link_button("🎁 この銘柄の企業情報をチェック", profile_url)
 
         yutai_url = f"https://finance.yahoo.co.jp/quote/{selected_code}.T/incentive"
 
