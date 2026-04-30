@@ -77,6 +77,10 @@ if not result.empty:
 
         st.link_button("🎁 この銘柄の企業情報をチェック", profile_url)
 
+        chart_url = f"https://finance.yahoo.co.jp/quote/{selected_code}.T/chart"
+
+        st.link_button("🎁 この銘柄のチャートをチェック", chart_url)
+
         yutai_url = f"https://finance.yahoo.co.jp/quote/{selected_code}.T/incentive"
 
         st.link_button("🎁 この銘柄の優待情報をチェック", yutai_url)
