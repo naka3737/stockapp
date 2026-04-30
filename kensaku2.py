@@ -3,6 +3,7 @@ import pandas as pd
 import yfinance as yf
 from lbox2 import listmake2 
 
+st.set_page_config(page_title="日本株 投資判断", menu_items=None)
 # ページのタイトル
 st.title("📈 日本株 投資判断")
 

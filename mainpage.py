@@ -18,6 +18,9 @@ if st.button("銀行"):
 if st.button("半導体"):
     st.switch_page("pages/handoutai.py")
 
+if st.button("日経寄与"):
+    st.switch_page("pages/nikkei.py")
+
 if st.button("金属"):
     st.switch_page("pages/kinzoku.py")
 
