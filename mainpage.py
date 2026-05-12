@@ -18,6 +18,9 @@ if st.button("銀行"):
 if st.button("電力"):
     st.switch_page("pages/denryoku.py")
 
+if st.button("不動産"):
+    st.switch_page("pages/fudousan.py")
+
 if st.button("半導体"):
     st.switch_page("pages/handoutai.py")
 
