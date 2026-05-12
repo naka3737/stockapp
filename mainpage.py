@@ -15,6 +15,9 @@ if st.button("自動車"):
 if st.button("銀行"):
     st.switch_page("pages/ginkou.py")
 
+if st.button("電力"):
+    st.switch_page("pages/denryoku.py")
+
 if st.button("半導体"):
     st.switch_page("pages/handoutai.py")
 
