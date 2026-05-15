@@ -95,7 +95,7 @@ if st.session_state.selected_month:
 
                     st.write("**📈 株価**")
                     st.write(str(price) + " 円")
-                    st.markdown(f"### 📋 【{str(price) }円")
+                    st.markdown(f"#### {str(price) }円")
 
                 with col_info2:
                     st.info(f"**優待内容:**\n\n{target_data['優待内容']}")
