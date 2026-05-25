@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import yfinance as yf
+import requests
+from bs4 import BeautifulSoup
 from lbox7 import listmake 
 
 # ページのタイトル
@@ -72,6 +74,14 @@ if not result.empty:
             st.metric(label="1株配当（年間）", value=f"{dividend_rate} ドル")
         else:
             st.metric(label="配当利回り", value="データなし")
+
+        profile_url = f"https://finance.yahoo.com/quote/{selected_code}/profile"
+
+        st.link_button("🎁 この銘柄の企業情報をチェック", profile_url)
+
+        profile_url2 = f"https://finance.yahoo.co.jp/quote/{selected_code}"
+
+        st.link_button("🎁 この銘柄の日本語企業情報をチェック", profile_url2)
 
         print(handan)
 
