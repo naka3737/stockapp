@@ -99,5 +99,11 @@ if st.session_state.selected_month:
 
                 with col_info2:
                     st.info(f"**優待内容:**\n\n{target_data['優待内容']}")
+
+                profile_url = f"https://finance.yahoo.co.jp/quote/{target_data['code']}"
+
+                st.link_button("🎁 この銘柄の企業情報をチェック", profile_url)
+
+
         else:
             st.warning(f"{month}月の優待データは見つかりませんでした。")
