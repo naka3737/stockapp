@@ -4,6 +4,7 @@ import yfinance as yf
 import requests
 from bs4 import BeautifulSoup
 from lbox7 import listmake 
+from sector import csector
 
 # ページのタイトル
 st.title("📈 米国株 投資判断")
@@ -39,7 +40,9 @@ print(result)
 
 if not result.empty:
     name = result.iloc[0]['Company']
-    st.subheader(f"📌 銘柄名: {name}")
+    sector = result.iloc[0]['GICS Sector']
+    sname = csector(sector);
+    st.subheader(f"📌 銘柄名: {name} {sname}")
 
     # 4. 株価取得
     with st.spinner('株価を取得中...'):
