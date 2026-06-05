@@ -20,6 +20,8 @@ def load_data():
     df = pd.read_csv("russell.csv")
     df["Symbol"] = df["Symbol"].astype(str)
 
+    if "idx" in df.columns:
+        df["idx"] = df["idx"].astype(str).str.zfill(4)
     # 既存のPFフィールドの空白（NaN）を空文字に統一して処理しやすくする
     if "PF" in df.columns:
         df["PF"] = df["PF"].fillna("")
