@@ -60,7 +60,8 @@ if not result.empty:
     name = result.iloc[0]["Company"]
     sector = result.iloc[0]["GICS Sector"]
     sname = csector(sector)
-    st.subheader(f"📌 銘柄名: {name} {sname}")
+    subsector =result.iloc[0]["GICS Sub-Industry"]
+    st.subheader(f"📌 銘柄名: {name} \n\n{sname} \n\n{subsector}")
 
     # 現在選択されている銘柄のPF状態を取得
     current_pf_status = result.iloc[0]["PF"]
@@ -101,14 +102,10 @@ if not result.empty:
     with st.spinner("株価を取得中..."):
         ticker = yf.Ticker(f"{selected_code}")
 
-        try:
-            handan = ticker.recommendations
-            if handan is not None and not handan.empty:
-                st.write(handan)
-            else:
-                st.write("現在、推奨データは利用できません。")
-        except Exception:
-            st.write("推奨データの取得中にエラーが発生しました。")
+
+
+        cprice = ticker.fast_info.last_price
+        st.metric(label="現在株価", value=f"{cprice:.2f} ドル")
 
         # 目標株価を表示
         handan2 = ticker.info.get("targetMeanPrice")
@@ -129,6 +126,15 @@ if not result.empty:
 
         profile_url2 = f"https://finance.yahoo.co.jp/quote/{selected_code}"
         st.link_button("🎁 この銘柄の日本語企業情報をチェック", profile_url2)
+
+        try:
+            handan = ticker.recommendations
+            if handan is not None and not handan.empty:
+                st.write(handan)
+            else:
+                st.write("現在、推奨データは利用できません。")
+        except Exception:
+            st.write("推奨データの取得中にエラーが発生しました。")
 
         print(handan)
         print(handan2)
