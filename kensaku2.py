@@ -60,6 +60,11 @@ if not result.empty:
 
         price2 = ticker.fast_info.last_price
         st.metric(label="現在株価", value=f"{int(price2)} 円")
+        price3 = ticker.fast_info.previous_close
+        st.metric(label="前日株価", value=f"{int(price3)} 円")
+        rate = (price2 - price3)/price3 * 100
+        st.metric(label="前日比", value=f"{rate:.2f} ％")
+
 
         if dividend_yield is not None:
             # 小数をパーセント表示に変換 (0.0345 -> 3.45%)
@@ -78,7 +83,7 @@ if not result.empty:
                 st.write("現在、推奨データは利用できません。")
         except Exception:
             st.write("推奨データの取得中にエラーが発生しました。")
-            
+
 
         profile_url = f"https://finance.yahoo.co.jp/quote/{selected_code}.T/profile"
 
