@@ -48,15 +48,7 @@ if not result.empty:
         # 投資判断（推奨）を表示
         #handan = ticker.recommendations
 
-        try:
-            handan = ticker.recommendations
 
-            if handan is not None and not handan.empty:
-                st.write(handan)
-            else:
-                st.write("現在、推奨データは利用できません。")
-        except Exception:
-            st.write("推奨データの取得中にエラーが発生しました。")
 
         # 目標株価を表示
         handan2 = ticker.info.get("targetMeanPrice")
@@ -66,6 +58,9 @@ if not result.empty:
         # 1株あたりの年間配当額
         dividend_rate = ticker.info.get('dividendRate')
 
+        price2 = ticker.fast_info.last_price
+        st.metric(label="現在株価", value=f"{int(price2)} 円")
+
         if dividend_yield is not None:
             # 小数をパーセント表示に変換 (0.0345 -> 3.45%)
             yield_pct = dividend_yield 
@@ -73,6 +68,17 @@ if not result.empty:
             st.metric(label="1株配当（年間）", value=f"{dividend_rate} 円")
         else:
             st.metric(label="配当利回り", value="データなし")
+
+        try:
+            handan = ticker.recommendations
+
+            if handan is not None and not handan.empty:
+                st.write(handan)
+            else:
+                st.write("現在、推奨データは利用できません。")
+        except Exception:
+            st.write("推奨データの取得中にエラーが発生しました。")
+            
 
         profile_url = f"https://finance.yahoo.co.jp/quote/{selected_code}.T/profile"
 
