@@ -74,17 +74,6 @@ if not result.empty:
         else:
             st.metric(label="配当利回り", value="データなし")
 
-        try:
-            handan = ticker.recommendations
-
-            if handan is not None and not handan.empty:
-                st.write(handan)
-            else:
-                st.write("現在、推奨データは利用できません。")
-        except Exception:
-            st.write("推奨データの取得中にエラーが発生しました。")
-
-
         profile_url = f"https://finance.yahoo.co.jp/quote/{selected_code}.T/profile"
 
         st.link_button("🎁 この銘柄の企業情報をチェック", profile_url)
@@ -96,6 +85,17 @@ if not result.empty:
         yutai_url = f"https://finance.yahoo.co.jp/quote/{selected_code}.T/incentive"
 
         st.link_button("🎁 この銘柄の優待情報をチェック", yutai_url)
+
+        try:
+            handan = ticker.recommendations
+
+            if handan is not None and not handan.empty:
+                st.write(handan)
+            else:
+                st.write("現在、推奨データは利用できません。")
+        except Exception:
+            st.write("推奨データの取得中にエラーが発生しました。")
+
 
         print(handan)
 
