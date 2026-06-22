@@ -27,6 +27,9 @@ if st.button("半導体"):
 if st.button("飲食業"):
     st.switch_page("pages/insyoku.py")
 
+if st.button("ゲーム"):
+    st.switch_page("pages/game.py")
+
 if st.button("日経寄与"):
     st.switch_page("pages/nikkei.py")
 
