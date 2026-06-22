@@ -107,7 +107,7 @@ if not result.empty:
 
 
 
-        cprice = ticker.fast_info.last_price
+        cprice = int(ticker.fast_info.last_price)
         st.metric(label="現在株価", value=f"{cprice} 円")
 
         # 目標株価を表示
