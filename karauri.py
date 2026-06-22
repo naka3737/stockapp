@@ -103,12 +103,12 @@ if not result.empty:
 
     # 4. 株価取得
     with st.spinner("株価を取得中..."):
-        ticker = yf.Ticker(f"{selected_code}")
+        ticker = yf.Ticker(f"{selected_code}.T")
 
 
 
         cprice = ticker.fast_info.last_price
-        st.metric(label="現在株価", value=f"{cprice:.2f} 円")
+        st.metric(label="現在株価", value=f"{cprice} 円")
 
         # 目標株価を表示
         handan2 = ticker.info.get("targetMeanPrice")
@@ -120,7 +120,7 @@ if not result.empty:
         if dividend_yield is not None:
             yield_pct = dividend_yield
             st.metric(label="配当利回り", value=f"{yield_pct:.2f} %")
-            st.metric(label="1株配当（年間）", value=f"{dividend_rate} ドル")
+            st.metric(label="1株配当（年間）", value=f"{dividend_rate} 円")
         else:
             st.metric(label="配当利回り", value="データなし")
 
@@ -173,11 +173,11 @@ if not result.empty:
                     )
             else:
                 st.metric(label="目標株価", value=f"データなし")
-                st.metric(label="現在株価", value=f"{int(price2)} ドル")
+                st.metric(label="現在株価", value=f"{int(price2)} 円")
 
         else:
             st.metric(label="投資判断", value="データがありません")
             price2 = ticker.fast_info.last_price
-            st.metric(label="現在株価", value=f"{int(price2)} ドル")
+            st.metric(label="現在株価", value=f"{int(price2)} 円")
 else:
     st.error("そのコードは銘柄リストにありません。")
