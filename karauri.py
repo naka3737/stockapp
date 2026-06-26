@@ -117,8 +117,10 @@ if not result.empty:
         price4 = df["Close"].iloc[-1]      # 前日
         price5 = df["Close"].iloc[-2]      # 前々日
         price6 = df["Close"].iloc[-3]    # 前々々日
-        price7 = df["Close"].iloc[-4]    # 前々々日
-        price8 = df["Close"].iloc[-5]    # 前々々日
+        price7 = df["Close"].iloc[-4]    # 前々々々日
+        price8 = df["Close"].iloc[-5]    # 前々々々々日
+
+
 
         price3 = ticker.fast_info.previous_close
         st.metric(label="前日株価", value=f"{int(price3)} 円")
@@ -126,7 +128,23 @@ if not result.empty:
         rate = (cprice - price3)/price3 * 100
         st.metric(label="前日比", value=f"{rate:.2f} ％")
 
+        if price4 < price5 and price5 < price6:
+            if price6 < price7:
+                if price7 < price8:
+                    st.metric(label="連続下落", value=f"株価が４日連続で下落しています")
+                else:
+                    st.metric(label="連続下落", value=f"株価が３日連続で下落しています")
+            # else:
+            #     st.metric(label="連続下落", value=f"株価が３日連続で下落しています")
 
+        if price4 > price5 and price5 > price6:
+            if price6 > price7:
+                if price7 > price8:
+                    st.metric(label="連続上昇", value=f"株価が４日連続で上昇しています")
+                else:
+                    st.metric(label="連続上昇", value=f"株価が３日連続で上昇しています")
+            # else:
+            #     st.metric(label="連続上昇", value=f"株価が３日連続で上昇しています")
 
         past_prices = past_prices.iloc[::-1]
         past_prices = past_prices.rename(columns={"Close": "終値"})
