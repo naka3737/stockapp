@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 import streamlit as st
 import yfinance as yf
+import datetime
 from bs4 import BeautifulSoup
 from lbox10 import listmake
 from sector import csector
@@ -110,6 +111,63 @@ if not result.empty:
         cprice = int(ticker.fast_info.last_price)
         st.metric(label="現在株価", value=f"{cprice} 円")
 
+        df = ticker.history(period="7d")
+        past_prices = df[["Close"]].iloc[-6:-1]
+
+        price4 = df["Close"].iloc[-1]      # 前日
+        price5 = df["Close"].iloc[-2]      # 前々日
+        price6 = df["Close"].iloc[-3]    # 前々々日
+        price7 = df["Close"].iloc[-4]    # 前々々日
+        price8 = df["Close"].iloc[-5]    # 前々々日
+
+        price3 = ticker.fast_info.previous_close
+        st.metric(label="前日株価", value=f"{int(price3)} 円")
+        # st.metric(label="前日株価", value=f"{int(price4)} 円")
+        rate = (cprice - price3)/price3 * 100
+        st.metric(label="前日比", value=f"{rate:.2f} ％")
+
+
+
+        past_prices = past_prices.iloc[::-1]
+        past_prices = past_prices.rename(columns={"Close": "終値"})
+
+        # インデックスを日付のみに変換
+        past_prices.index = past_prices.index.strftime('%Y-%m-%d')
+        past_prices.index.name = ""
+
+        # タイトル
+        st.write("### 直近の株価一覧 (1日前〜5日前)")
+        # st.write(past_prices)
+        
+        st.dataframe(
+            past_prices,
+            column_config={
+                "終値": st.column_config.NumberColumn(
+                    "終値",
+                    width="small",  # 幅を小さく指定（"small", "medium", "large" などが選べます）
+                    format="%.1f円" # ついでに「◯◯円」と綺麗に単位をつけることも可能です
+                )
+            },
+            use_container_width=False # 画面いっぱいに横に広がるのを防ぐ
+        )
+
+
+        # st.metric(label="１日前株価", value=f"{int(price4)} 円")
+        # st.metric(label="２日前株価", value=f"{int(price5)} 円")
+        # st.metric(label="３日前株価", value=f"{int(price6)} 円")
+        # st.metric(label="４日前株価", value=f"{int(price7)} 円")
+        # st.metric(label="５日前株価", value=f"{int(price8)} 円")
+
+        ex_div_timestamp = ticker.info.get("exDividendDate")
+
+        if ex_div_timestamp:
+            # 読みやすい日付形式（YYYY-MM-DD）に変換
+            ex_div_date = datetime.datetime.fromtimestamp(ex_div_timestamp).strftime('%Y年%m月%d日')
+            # st.write(f"直近の配当権利落ち日: {ex_div_date}")
+            st.metric(label="直近の配当権利落ち日", value=f"{ex_div_date} ")
+        else:
+            # st.write("権利落ち日のデータが見つかりませんでした（無配当の銘柄など）")
+            st.metric(label="直近の配当権利落ち日", value=f"見つかりませんでした")
         # 目標株価を表示
         handan2 = ticker.info.get("targetMeanPrice")
 
