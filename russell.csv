@@ -214,9 +214,9 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0213,Clarivate,CLVT,Industrials,,
 0214,Clean Harbors,CLH,Industrials,Environmental & Facilities Services,
 0215,Clearway Energy (Class A),CWEN.A,Utilities,,
-0216,Clearway Energy (Class C),CWEN,Utilities,,
+0216,Clearway Energy (Class C),CWEN,Utilities,,y
 0217,Cleveland-Cliffs,CLF,Materials,Steel,
-0218,Clorox,CLX,Consumer Staples,Household Products,
+0218,Clorox,CLX,Consumer Staples,Household Products,y
 0219,Cloudflare,NET,Information Technology,,
 0220,CME Group,CME,Financials,Financial Exchanges & Data,
 0221,CMS Energy,CMS,Utilities,Multi-Utilities,
@@ -231,11 +231,11 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0230,Colgate-Palmolive,CL,Consumer Staples,Household Products,
 0231,Columbia Banking System,COLB,Financials,Regional Banks,
 0232,Columbia Sportswear,COLM,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",
-0233,Comcast,CMCSA,Communication Services,Cable & Satellite,
+0233,Comcast,CMCSA,Communication Services,Cable & Satellite,y
 0234,Comfort Systems USA,FIX,Industrials,Construction & Engineering,
 0235,Commerce Bancshares,CBSH,Financials,Regional Banks,
-0236,Conagra Brands,CAG,Consumer Staples,Packaged Foods & Meats,
-0237,Concentrix,CNXC,Information Technology,Data Processing & Outsourced Services,
+0236,Conagra Brands,CAG,Consumer Staples,Packaged Foods & Meats,y
+0237,Concentrix,CNXC,Information Technology,Data Processing & Outsourced Services,y
 0238,ConocoPhillips,COP,Energy,Oil & Gas Exploration & Production,
 0239,Consolidated Edison,ED,Utilities,Electric Utilities,
 0240,Constellation Brands,STZ,Consumer Staples,Distillers & Vintners,
@@ -259,10 +259,10 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0258,CRH plc,CRH,Materials,Construction Materials,
 0259,Crocs,CROX,Consumer Discretionary,Footwear,
 0260,CrowdStrike,CRWD,Information Technology,Application Software,
-0261,Crown Castle,CCI,Real Estate,Telecom Tower REITs,
+0261,Crown Castle,CCI,Real Estate,Telecom Tower REITs,y
 0262,Crown Holdings,CCK,Materials,,
 0263,CSX Corporation,CSX,Industrials,Rail Transportation,
-0264,CubeSmart,CUBE,Real Estate,,
+0264,CubeSmart,CUBE,Real Estate,,y
 0265,Cummins,CMI,Industrials,Industrial Machinery & Supplies & Components,
 0266,Curtiss-Wright,CW,Industrials,Aerospace & Defense,
 0267,CVS Health,CVS,Health Care,Health Care Services,
@@ -276,7 +276,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0275,Deere & Company,DE,Industrials,Agricultural & Farm Machinery,
 0276,Delta Air Lines,DAL,Industrials,Passenger Airlines,
 0277,Dell Technologies,DELL,Information Technology,"Technology Hardware, Storage & Peripherals",
-0278,Dentsply Sirona,XRAY,Health Care,Health Care Supplies,
+0278,Dentsply Sirona,XRAY,Health Care,Health Care Supplies,y
 0279,Devon Energy,DVN,Energy,Oil & Gas Exploration & Production,
 0280,Dexcom,DXCM,Health Care,Health Care Equipment,
 0281,Diamondback Energy,FANG,Energy,Oil & Gas Exploration & Production,
@@ -329,7 +329,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0328,Envista,NVST,Health Care,Health Care Supplies,
 0329,EOG Resources,EOG,Energy,Oil & Gas Exploration & Production,
 0330,EPAM Systems,EPAM,Information Technology,IT Consulting & Other Services,
-0331,EPR Properties,EPR,Real Estate,Other Specialized REITs,
+0331,EPR Properties,EPR,Real Estate,Other Specialized REITs,y
 0332,EQT Corporation,EQT,Energy,Oil & Gas Exploration & Production,
 0333,Equifax,EFX,Industrials,Research & Consulting Services,
 0334,Equinix,EQIX,Real Estate,Data Center REITs,
@@ -440,7 +440,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0439,Hayward Holdings,HAYW,Industrials,,
 0440,HCA Healthcare,HCA,Health Care,Health Care Facilities,
 0441,Healthcare Realty Trust,HR,Real Estate,,
-0442,Healthpeak Properties,DOC,Real Estate,Health Care REITs,
+0442,Healthpeak Properties,DOC,Real Estate,Health Care REITs,y
 0443,HEICO (Class A),HEI.A,Industrials,Aerospace & Defense,
 0444,HEICO (Common),HEI,Industrials,Aerospace & Defense,
 0445,Jack Henry & Associates,JKHY,Financials,Transaction & Payment Processing Services,
@@ -448,7 +448,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0447,Hewlett Packard Enterprise,HPE,Information Technology,"Technology Hardware, Storage & Peripherals",
 0448,Hexcel,HXL,Industrials,Aerospace & Defense,
 0449,HF Sinclair,DINO,Energy,Oil & Gas Refining & Marketing,
-0450,Highwoods Properties,HIW,Real Estate,,
+0450,Highwoods Properties,HIW,Real Estate,,y
 0451,Hilton Worldwide,HLT,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",
 0452,Home Depot (The),HD,Consumer Discretionary,Home Improvement Retail,
 0453,Honeywell,HON,Industrials,Industrial Conglomerates,
@@ -457,7 +457,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0456,Houlihan Lokey,HLI,Financials,,
 0457,Howard Hughes Holdings,HHH,Real Estate,,
 0458,Howmet Aerospace,HWM,Industrials,Aerospace & Defense,
-0459,HP Inc.,HPQ,Information Technology,"Technology Hardware, Storage & Peripherals",
+0459,HP Inc.,HPQ,Information Technology,"Technology Hardware, Storage & Peripherals",y
 0460,Hubbell Incorporated,HUBB,Industrials,Industrial Machinery & Supplies & Components,
 0461,HubSpot,HUBS,Information Technology,,
 0462,Humana,HUM,Health Care,Managed Health Care,
@@ -512,7 +512,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0511,Keurig Dr Pepper,KDP,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,
 0512,Keycorp,KEY,Financials,Regional Banks,
 0513,Keysight,KEYS,Information Technology,Electronic Equipment & Instruments,
-0514,Kilroy Realty,KRC,Real Estate,,
+0514,Kilroy Realty,KRC,Real Estate,,y
 0515,Kimberly-Clark,KMB,Consumer Staples,Household Products,
 0516,Kimco Realty,KIM,Real Estate,Retail REITs,
 0517,Kinder Morgan,KMI,Energy,Oil & Gas Storage & Transportation,
@@ -521,7 +521,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0520,KKR & Co. Inc.,KKR,Financials,Asset Management & Custody Banks,
 0521,KLA Corporation,KLAC,Information Technology,Semiconductor Materials & Equipment,
 0522,Knight-Swift,KNX,Industrials,Cargo Ground Transportation,
-0523,Kraft Heinz,KHC,Consumer Staples,Packaged Foods & Meats,
+0523,Kraft Heinz,KHC,Consumer Staples,Packaged Foods & Meats,y
 0524,Kroger,KR,Consumer Staples,Food Retail,
 0525,Kyndryl,KD,Information Technology,IT Consulting & Other Services,
 0526,L3Harris,LHX,Industrials,Aerospace & Defense,
@@ -566,7 +566,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0565,Lululemon Athletica,LULU,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",
 0566,Lumentum,LITE,Information Technology,,
 0567,Lyft,LYFT,Industrials,Passenger Ground Transportation,
-0568,LyondellBasell,LYB,Materials,Specialty Chemicals,
+0568,LyondellBasell,LYB,Materials,Specialty Chemicals,y
 0569,M&T Bank,MTB,Financials,Regional Banks,
 0570,MACOM Technology Solutions,MTSI,Information Technology,Semiconductors,
 0571,"Macy's, Inc.",M,Consumer Discretionary,Department Stores,
@@ -592,7 +592,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0591,McDonald's,MCD,Consumer Discretionary,Restaurants,
 0592,McKesson Corporation,MCK,Health Care,Health Care Distributors,
 0593,MDU Resources,MDU,Utilities,Multi-Utilities,
-0594,Medical Properties Trust,MPT,Real Estate,Health Care REITs,
+0594,Medical Properties Trust,MPT,Real Estate,Health Care REITs,y
 0595,Medline Inc.,MDLN,Health Care,,
 0596,Medpace,MEDP,Health Care,,
 0597,Medtronic,MDT,Health Care,Health Care Equipment,
@@ -609,7 +609,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0608,Mid-America Apartment Communities,MAA,Real Estate,Multi-Family Residential REITs,
 0609,Middleby,MIDD,Industrials,Industrial Machinery & Supplies & Components,
 0610,Millicom,TIGO,Communication Services,Integrated Telecommunication Services,
-0611,Millrose Properties,MRP,Consumer Discretionary,Homebuilding,
+0611,Millrose Properties,MRP,Consumer Discretionary,Homebuilding,y
 0612,MKS Instruments,MKSI,Information Technology,Semiconductor Materials & Equipment,
 0613,Moderna,MRNA,Health Care,Biotechnology,
 0614,Mohawk Industries,MHK,Consumer Discretionary,Home Furnishings,
@@ -633,13 +633,13 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0632,"Nasdaq, Inc.",NDAQ,Financials,Financial Exchanges & Data,
 0633,Natera,NTRA,Health Care,,
 0634,National Fuel Gas,NFG,Utilities,Gas Utilities,
-0635,National Storage Affiliates,NSA,Real Estate,,
+0635,National Storage Affiliates,NSA,Real Estate,,y
 0636,nCino,NCNO,Information Technology,,
 0637,Netapp,NTAP,Information Technology,"Technology Hardware, Storage & Peripherals",
 0638,Netflix,NFLX,Communication Services,Movies & Entertainment,
 0639,Neurocrine Biosciences,NBIX,Health Care,Biotechnology,
 0640,New York Times Company,NYT,Communication Services,Publishing,
-0641,Newell Brands,NWL,Consumer Discretionary,Housewares & Specialties,
+0641,Newell Brands,NWL,Consumer Discretionary,Housewares & Specialties,y
 0642,NewMarket,NEU,Materials,Specialty Chemicals,
 0643,Newmont,NEM,Materials,Gold,
 0644,News Corp (Class A),NWSA,Communication Services,Publishing,
@@ -648,7 +648,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0647,NextEra Energy,NEE,Utilities,Multi-Utilities,
 0648,NIQ Global Intelligence,NIQ,Communication Services,,
 0649,"Nike, Inc.",NKE,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",
-0650,NiSource,NI,Utilities,Multi-Utilities,
+0650,NiSource,NI,Utilities,Multi-Utilities,y
 0651,NNN Reit,NNN,Real Estate,Retail REITs,
 0652,Nordson,NDSN,Industrials,Industrial Machinery & Supplies & Components,
 0653,Norfolk Southern,NSC,Industrials,Rail Transportation,
