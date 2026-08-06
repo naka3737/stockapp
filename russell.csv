@@ -648,8 +648,8 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0647,NextEra Energy,NEE,Utilities,Multi-Utilities,
 0648,NIQ Global Intelligence,NIQ,Communication Services,,
 0649,"Nike, Inc.",NKE,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",
-0650,NiSource,NI,Utilities,Multi-Utilities,y
-0651,NNN Reit,NNN,Real Estate,Retail REITs,
+0650,NiSource,NI,Utilities,Multi-Utilities,
+0651,NNN Reit,NNN,Real Estate,Retail REITs,y
 0652,Nordson,NDSN,Industrials,Industrial Machinery & Supplies & Components,
 0653,Norfolk Southern,NSC,Industrials,Rail Transportation,
 0654,Northern Trust,NTRS,Financials,Asset Management & Custody Banks,
@@ -675,7 +675,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0674,Omnicom Group,OMC,Communication Services,Advertising,
 0675,On Holding AG,ONON,Consumer Discretionary,Footwear,
 0676,ON Semiconductor,ON,Information Technology,Semiconductors,
-0677,OneMain Financial,OMF,Financials,,
+0677,OneMain Financial,OMF,Financials,,y
 0678,Oneok,OKE,Energy,Oil & Gas Storage & Transportation,
 0679,Onto Innovation,ONTO,Information Technology,Semiconductor Materials & Equipment,
 0680,Oracle Corporation,ORCL,Information Technology,Application Software,
@@ -688,7 +688,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0687,Packaging Corporation of America,PKG,Materials,Paper & Plastic Packaging Products & Materials,
 0688,Palantir Technologies,PLTR,Information Technology,Internet Services & Infrastructure,
 0689,Palo Alto Networks,PANW,Information Technology,Systems Software,
-0690,Park Hotels & Resorts,PK,Real Estate,Hotel & Resort REITs,
+0690,Park Hotels & Resorts,PK,Real Estate,Hotel & Resort REITs,y
 0691,Parker Hannifin,PH,Industrials,Industrial Machinery & Supplies & Components,
 0692,Parsons Corporation,PSN,Industrials,Aerospace & Defense,
 0693,Paychex,PAYX,Industrials,Human Resource & Employment Services,
@@ -703,8 +703,8 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0702,PepsiCo,PEP,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,
 0703,Performance Food Group,PFGC,Consumer Staples,Food Distributors,
 0704,Permian Resources,PR,Energy,Oil & Gas Exploration & Production,
-0705,Perrigo,PRGO,Health Care,Pharmaceuticals,
-0706,Pfizer,PFE,Health Care,Pharmaceuticals,
+0705,Perrigo,PRGO,Health Care,Pharmaceuticals,y
+0706,Pfizer,PFE,Health Care,Pharmaceuticals,y
 0707,PG&E Corporation,PCG,Utilities,,
 0708,Philip Morris International,PM,Consumer Staples,Tobacco,
 0709,Phillips 66,PSX,Energy,Oil & Gas Refining & Marketing,
@@ -725,7 +725,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0724,Principal Financial Group,PFG,Financials,Life & Health Insurance,
 0725,Procore,PCOR,Information Technology,,
 0726,Procter & Gamble,PG,Consumer Staples,Personal Care Products,
-0727,Progressive Corporation,PGR,Financials,Property & Casualty Insurance,
+0727,Progressive Corporation,PGR,Financials,Property & Casualty Insurance,y
 0728,Prologis,PLD,Real Estate,Industrial REITs,
 0729,Prosperity Bancshares,PB,Financials,Regional Banks,
 0730,Prudential Financial,PRU,Financials,Life & Health Insurance,
@@ -749,7 +749,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0748,Rayonier,RYN,Real Estate,Timber REITs,
 0749,RB Global,RBA,Industrials,,
 0750,RBC Bearings,RBC,Industrials,,
-0751,Realty Income,O,Real Estate,Retail REITs,
+0751,Realty Income,O,Real Estate,Retail REITs,y
 0752,Reddit,RDDT,Communication Services,Interactive Media & Services,
 0753,Regal Rexnord,RRX,Industrials,Electrical Components & Equipment,
 0754,Regency Centers,REG,Real Estate,Retail REITs,
@@ -768,10 +768,10 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0767,Reynolds Consumer Products,REYN,Consumer Staples,,
 0768,RH,RH,Consumer Discretionary,Homefurnishing Retail,
 0769,RingCentral,RNG,Information Technology,,
-0770,Rithm Capital,RITM,Financials,,
+0770,Rithm Capital,RITM,Financials,,y
 0771,Rivian,RIVN,Consumer Discretionary,,
 0772,RLI Corp.,RLI,Financials,,
-0773,Robert Half,RHI,Industrials,Human Resource & Employment Services,
+0773,Robert Half,RHI,Industrials,Human Resource & Employment Services,y
 0774,Robinhood Markets,HOOD,Financials,Investment Banking & Brokerage,
 0775,Roblox Corporation,RBLX,Communication Services,,
 0776,Rocket Companies,RKT,Financials,,
@@ -820,7 +820,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0819,Sirius XM,SIRI,Communication Services,Broadcasting,
 0820,SiteOne Landscape Supply,SITE,Industrials,,
 0821,Skyworks Solutions,SWKS,Information Technology,Semiconductors,
-0822,Smithfield Foods,SFD,Consumer Staples,Packaged Foods & Meats,
+0822,Smithfield Foods,SFD,Consumer Staples,Packaged Foods & Meats,y
 0823,J.M. Smucker Company (The),SJM,Consumer Staples,Packaged Foods & Meats,
 0824,Smurfit Westrock,SW,Materials,Paper & Plastic Packaging Products & Materials,
 0825,Snap-on,SNA,Industrials,Industrial Machinery & Supplies & Components,
@@ -842,13 +842,13 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0841,StandardAero,SARO,Industrials,Aerospace & Defense,
 0842,Stanley Black & Decker,SWK,Industrials,Industrial Machinery & Supplies & Components,
 0843,Starbucks,SBUX,Consumer Discretionary,Restaurants,
-0844,Starwood Property Trust,STWD,Financials,,
+0844,Starwood Property Trust,STWD,Financials,,y
 0845,State Street Corporation,STT,Financials,Asset Management & Custody Banks,
 0846,Steel Dynamics,STLD,Materials,Steel,
 0847,Steris,STE,Health Care,Health Care Equipment,
 0848,Stifel,SF,Financials,Investment Banking & Brokerage,
 0849,Stryker Corporation,SYK,Health Care,Health Care Equipment,
-0850,Summit Therapeutics,SMMT,Health Care,,
+0850,Summit Therapeutics,SMMT,Health Care,,y
 0851,Sun Communities,SUI,Real Estate,,
 0852,Supermicro,SMCI,Information Technology,"Technology Hardware, Storage & Peripherals",
 0853,Synchrony Financial,SYF,Financials,Consumer Finance,
