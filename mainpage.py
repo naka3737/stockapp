@@ -21,6 +21,9 @@ if st.button("電力"):
 if st.button("不動産"):
     st.switch_page("pages/fudousan.py")
 
+if st.button("建設"):
+    st.switch_page("pages/kenseyu.py")
+
 if st.button("半導体"):
     st.switch_page("pages/handoutai.py")
 
