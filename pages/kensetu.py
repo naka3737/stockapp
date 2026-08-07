@@ -5,7 +5,7 @@ from japaname import get_data
 
 def main():
 
-    st.set_page_config(page_title="自動車株", menu_items=None)
+    st.set_page_config(page_title="建設株", menu_items=None)
     st.title("建設株")
 
     # 調べたい銘柄リスト
