@@ -848,7 +848,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0847,Steris,STE,Health Care,Health Care Equipment,
 0848,Stifel,SF,Financials,Investment Banking & Brokerage,
 0849,Stryker Corporation,SYK,Health Care,Health Care Equipment,
-0850,Summit Therapeutics,SMMT,Health Care,,y
+0850,Summit Therapeutics,SMMT,Health Care,,
 0851,Sun Communities,SUI,Real Estate,,
 0852,Supermicro,SMCI,Information Technology,"Technology Hardware, Storage & Peripherals",
 0853,Synchrony Financial,SYF,Financials,Consumer Finance,
@@ -875,7 +875,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0874,Texas Roadhouse,TXRH,Consumer Discretionary,,
 0875,Textron,TXT,Industrials,Aerospace & Defense,
 0876,Thermo Fisher Scientific,TMO,Health Care,Life Sciences Tools & Services,
-0877,Third Federal S&L,TFSL,Financials,,
+0877,Third Federal S&L,TFSL,Financials,,y
 0878,Thor Industries,THO,Consumer Discretionary,Leisure Products,
 0879,Timken Company,TKR,Industrials,Industrial Machinery & Supplies & Components,
 0880,TJX Companies,TJX,Consumer Discretionary,Apparel Retail,
@@ -914,7 +914,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0913,Under Armour (Class C),UA,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",
 0914,Union Pacific Corporation,UNP,Industrials,Rail Transportation,
 0915,United Airlines Holdings,UAL,Industrials,Passenger Airlines,
-0916,United Parcel Service,UPS,Industrials,Air Freight & Logistics,
+0916,United Parcel Service,UPS,Industrials,Air Freight & Logistics,y
 0917,United Rentals,URI,Industrials,Trading Companies & Distributors,
 0918,United Therapeutics,UTHR,Health Care,Biotechnology,
 0919,United Wholesale Mortgage,UWMC,Financials,,
@@ -924,7 +924,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0923,Universal Health Services,UHS,Health Care,Health Care Facilities,
 0924,Unum,UNM,Financials,Life & Health Insurance,
 0925,US Foods,USFD,Consumer Staples,,
-0926,Vail Resorts,MTN,Consumer Discretionary,,
+0926,Vail Resorts,MTN,Consumer Discretionary,,y
 0927,Valero Energy,VLO,Energy,Oil & Gas Refining & Marketing,
 0928,Valmont Industries,VMI,Industrials,Industrial Machinery & Supplies & Components,
 0929,Valvoline,VVV,Materials,Commodity Chemicals,
@@ -933,17 +933,17 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0932,Veralto,VLTO,Industrials,Environmental & Facilities Services,
 0933,Verisign,VRSN,Information Technology,Internet Services & Infrastructure,
 0934,Verisk Analytics,VRSK,Industrials,Research & Consulting Services,
-0935,Verizon,VZ,Communication Services,Integrated Telecommunication Services,
+0935,Verizon,VZ,Communication Services,Integrated Telecommunication Services,y
 0936,Versant,VSNT,Communication Services,,
 0937,Versigent,VGNT,Consumer Discretionary,Automotive Parts & Equipment,
 0938,Vertex Pharmaceuticals,VRTX,Health Care,Biotechnology,
 0939,Vertiv,VRT,Industrials,,
 0940,VF Corporation,VFC,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",
 0941,Viatris,VTRS,Health Care,Pharmaceuticals,
-0942,Vici Properties,VICI,Real Estate,Hotel & Resort REITs,
+0942,Vici Properties,VICI,Real Estate,Hotel & Resort REITs,y
 0943,Viking Holdings,VIK,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",
 0944,Viking Therapeutics,VKTX,Health Care,Biotechnology,
-0945,Viper Energy,VNOM,Energy,Oil & Gas Storage & Transportation,
+0945,Viper Energy,VNOM,Energy,Oil & Gas Storage & Transportation,y
 0946,Virtu Financial,VIRT,Financials,,
 0947,Visa Inc.,V,Financials,Transaction & Payment Processing Services,
 0948,Vistra Corp.,VST,Utilities,Electric Utilities,
@@ -951,7 +951,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0950,Vornado Realty Trust,VNO,Real Estate,Office REITs,
 0951,Voya Financial,VOYA,Financials,Multi-Sector Holdings,
 0952,Vulcan Materials,VMC,Materials,Construction Materials,
-0953,W. P. Carey,WPC,Real Estate,,
+0953,W. P. Carey,WPC,Real Estate,,y
 0954,W. R. Berkley Corporation,WRB,Financials,Property & Casualty Insurance,
 0955,W. W. Grainger,GWW,Industrials,Industrial Machinery & Supplies & Components,
 0956,Wabtec,WAB,Industrials,Construction Machinery & Heavy Transportation Equipment,
@@ -967,16 +967,16 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0966,WEC Energy Group,WEC,Utilities,Electric Utilities,
 0967,Wells Fargo,WFC,Financials,Diversified Banks,
 0968,Welltower,WELL,Real Estate,Health Care REITs,
-0969,Wendy's Company (The),WEN,Consumer Discretionary,Restaurants,
+0969,Wendy's Company (The),WEN,Consumer Discretionary,Restaurants,y
 0970,Wesco International,WCC,Industrials,,
 0971,West Pharmaceutical Services,WST,Health Care,Health Care Supplies,
 0972,Western Alliance Bancorporation,WAL,Financials,,
 0973,Western Digital,WDC,Information Technology,"Technology Hardware, Storage & Peripherals",
-0974,Western Union,WU,Information Technology,Data Processing & Outsourced Services,
+0974,Western Union,WU,Information Technology,Data Processing & Outsourced Services,y
 0975,Westlake Corporation,WLK,Materials,,
 0976,WEX Inc.,WEX,Financials,Transaction & Payment Processing Services,
 0977,Weyerhaeuser,WY,Real Estate,Timber REITs,
-0978,Whirlpool Corporation,WHR,Consumer Discretionary,Household Appliances,
+0978,Whirlpool Corporation,WHR,Consumer Discretionary,Household Appliances,y
 0979,White Mountains Insurance Group,WTM,Financials,,
 0980,Williams Companies,WMB,Energy,Oil & Gas Storage & Transportation,
 0981,"Williams-Sonoma, Inc.",WSM,Consumer Discretionary,Homefurnishing Retail,
@@ -998,7 +998,7 @@ idx,Company,Symbol,GICS Sector,GICS Sub-Industry,PF
 0997,Zillow (Class A),ZG,Real Estate,,
 0998,Zillow (Class C),Z,Real Estate,,
 0999,Zimmer Biomet,ZBH,Health Care,Health Care Equipment,
-1000,Zions Bancorporation,ZION,Financials,Regional Banks,
+1000,Zions Bancorporation,ZION,Financials,Regional Banks,y
 1001,Zoetis,ZTS,Health Care,Pharmaceuticals,
 1002,Zoom Communications,ZM,Information Technology,Application Software,
 1003,ZoomInfo,GTM,Communication Services,,
