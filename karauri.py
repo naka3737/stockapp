@@ -169,6 +169,49 @@ if not result.empty:
             use_container_width=False # 画面いっぱいに横に広がるのを防ぐ
         )
 
+        st.write("バランスシート")
+
+        total_debt = ticker.info.get("totalDebt")
+
+        if total_debt is not None:
+            # 数値なのでカンマ区切りにして表示
+            st.metric(label="総負債", value=f"{total_debt:,} 円")
+        else:
+            # None などの場合は、エラーを防ぐために文字列で「データなし」などと表示
+            st.metric(label="総負債", value="データなし")
+
+        # net_debt = ticker.info.get("netlDebt")
+
+        bs = ticker.balance_sheet
+
+        try:
+            # 総負債 と 現金 のデータを直接取得して引き算する
+            # （※銘柄によって項目の名前が存在しない場合、ここでエラーになります）
+            total_debt = bs.loc["Total Debt"].iloc[0]
+            cash = bs.loc["Cash And Cash Equivalents"].iloc[0]
+
+            net_debt = total_debt - cash
+
+            st.metric(label="純負債", value=f"{net_debt:,.0f} 円")
+
+            ratio = net_debt / total_debt
+
+            ratio = ratio * 100
+
+            # 小数点3桁まで表示（例: 0.250）
+            st.metric(label="純負債 / 総負債比率", value=f"{ratio:.3f} %")
+
+        except Exception:
+            st.warning("この銘柄ではデータを取得・計算できませんでした。")
+
+
+
+        # if net_debt is not None:
+        #     # 数値なのでカンマ区切りにして表示
+        #     st.metric(label="純負債", value=f"{net_debt:,} 円")
+        # else:
+        #     # None などの場合は、エラーを防ぐために文字列で「データなし」などと表示
+        #     st.metric(label="純負債", value="データなし")
 
         # st.metric(label="１日前株価", value=f"{int(price4)} 円")
         # st.metric(label="２日前株価", value=f"{int(price5)} 円")
