@@ -14,7 +14,7 @@ def kabuka(selected_code):
 
 
         cprice = int(ticker.fast_info.last_price)
-        st.metric(label="現在株価", value=f"{cprice} 円")
+        # st.metric(label="現在株価", value=f"{cprice} 円")
 
         df = ticker.history(period="7d")
         past_prices = df[["Close"]].iloc[-6:-1]
@@ -28,10 +28,16 @@ def kabuka(selected_code):
 
 
         price3 = ticker.fast_info.previous_close
-        st.metric(label="前日株価", value=f"{int(price3)} 円")
+        # st.metric(label="前日株価", value=f"{int(price3)} 円")
         # st.metric(label="前日株価", value=f"{int(price4)} 円")
         rate = (cprice - price3)/price3 * 100
-        st.metric(label="前日比", value=f"{rate:.2f} ％")
+        # st.metric(label="前日比", value=f"{rate:.2f} ％")
+
+        price52h = ticker.info["fiftyTwoWeekHigh"]
+        st.metric(label="52週高値", value=f"{int(price52h)} 円")
+
+        price52l = ticker.info["fiftyTwoWeekLow"]
+        st.metric(label="52週安値", value=f"{int(price52l)} 円")
 
         if price4 < price5 and price5 < price6:
             if price6 < price7:
